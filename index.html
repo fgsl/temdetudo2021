@@ -4,32 +4,34 @@
      <head>
           <title>LOJAS TEM DE TUDO</title>
           <meta charset ="utf-8" />
+          <style type="text/css">
+               #n01 {font-size: larger; font-style: italic;}
+               #n02 {font-weight: bold; font-family: 'Times New Roman';}
+               td#n02 {position:fixed; left: 600px; top:100px;}
+               a {color: brown;background-color: lightblue; font-family: Verdana; }
+               .flashreverso { color:yellow; background-color: red; }
+               h1.flashreverso { color: orange; background-color: darkgreen;}               
+          </style>
      </head>
          
          
           
 <body>
-     <h1 >LOJAS TEM DE TUDO</h1> 
-     <h1>A loja mais barata do Brasil</h1>
+     <h1 id="n01"  style="color: red; background-color: yellow; font-family: Arial; text-align: center;">LOJAS TEM DE TUDO</h1> 
+     <h1 id="n02" class="flashreverso">A loja mais barata do Brasil</h1>
 
 
      <table>
+     <tbody>
           <tr>
-               <td> 
-                    
-						  <td><a href="entrar.html"> ENTRE </a><td>
-						  <td><a href="cadastrar.html"> CADASTRE-SE </a><td>
-                    
-               </td>
+						  <td id="n01"><a href="entrar.html"> ENTRE </a><td>
+						  <td id="n02"><a href="cadastrar.html"> CADASTRE-SE </a><td>
           </tr>
+     </tbody>
      </table>
 
-
-
-
-
-
      <table>
+          <tbody>
                <tr>
                     <td>
                          <img src="img/produtos/Ps5.jpg" alt="Playstation 5 de pé com controle apoiado nele" height="280" width="270"/><br/>
@@ -53,10 +55,11 @@
                     </td>
 
                </tr>
+          </tbody>
      </table>
 
 
-<footer>
+<footer class="flashreverso">
 
      <h2>Powered by MacroHard<h2>   
 
