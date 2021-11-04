@@ -5,6 +5,17 @@
           <title>LOJAS TEM DE TUDO</title>
           <meta charset ="utf-8" />
           <link rel="stylesheet" type="text/css" href="temdetudo.css">
+          <script type="text/javascript">
+          function mudarRodape() {
+               var rodape = `
+          <h1>MicroHard
+Sistemas
+Comerciais</h1>
+<a href="index.html">Voltar às Lojas Temdetudo</a>
+`;
+               document.getElementById('footer').innerHTML = rodape;
+          }
+          </script>
      </head>
          
          
@@ -52,7 +63,7 @@
      </table>
 
 
-<footer class="flashreverso">
+<footer class="flashreverso" id="footer" onclick="mudarRodape()"> 
 
      <h2>Powered by MacroHard<h2>   
 

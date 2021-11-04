@@ -4,12 +4,18 @@
 
      <head>
           <title>LOJAS TEM DE TUDO</title>
-          <meta charset ="utf-8" />
+		  <meta charset ="utf-8" />
+		  <script type="text/javascript">
+		    function focarCPF() {
+				inputCPF = document.getElementById("CPF");
+				inputCPF.focus();
+			}	
+		</script>
      </head>
          
          
           
-<body>
+<body onload="focarCPF()">
 	<h1><a href="index.html">LOJAS TEM DE TUDO</a></h1> 
 
 
@@ -17,7 +23,7 @@
   <table>
 		<tr>
 			  <td>CPF:</td> 
-			  <td><input type="text" name="CPF" /></td>
+			  <td><input type="text" name="CPF" id="CPF"/></td>
 		</tr>
 		<tr>
 			  <td>SENHA:</td>
