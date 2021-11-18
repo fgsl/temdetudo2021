@@ -1,6 +1,11 @@
+
 #n01 {font-size: larger; font-style: italic;}
 #n02 {font-weight: bold; font-family: 'Times New Roman';}
 td#n02 {position:fixed; left: 600px; top:100px;}
+body {background-color: lightblue;}
 a {color: brown;background-color: lightblue; font-family: Verdana; }
 .flashreverso { color:yellow; background-color: red; }
-h1.flashreverso { color: orange; background-color: darkgreen;}               
+h1.flashreverso { color: orange; background-color: darkgreen;}
+h1#n01 {color: red; background-color: yellow; font-family: Arial; text-align: center;}               
+
+

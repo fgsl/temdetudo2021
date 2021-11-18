@@ -2,52 +2,42 @@
 
 <html lang="pt-BR">
 
-     <head>
-          <title>LOJAS TEM DE TUDO</title>
-		  <meta charset ="utf-8" />
-		  <script type="text/javascript">
-		    function focarCPF() {
-				inputCPF = document.getElementById("CPF");
-				inputCPF.focus();
-			}	
-		</script>
-     </head>
-         
-         
-          
-<body onload="focarCPF()">
-	<h1><a href="index.html">LOJAS TEM DE TUDO</a></h1> 
+<head>
+	<title>LOJAS TEM DE TUDO</title>
+	<meta charset="utf-8" />
+	<script type="text/javascript" src="script.js"></script>
+	<link rel="stylesheet" type="text/css" href="temdetudo.css" />
+
+</head>
 
 
-<form>
-  <table>
-		<tr>
-			  <td>CPF:</td> 
-			  <td><input type="text" name="CPF" id="CPF"/></td>
-		</tr>
-		<tr>
-			  <td>SENHA:</td>
-			  <td><input type="text" name="SENHA" /></td>
-		</tr>
-		
-		<tr>
-			  <td>CONFIRMAR SENHA:</td>
-			  <td><input type="text" name="CONFIRSENHA" /></td>
-		</tr>
-		
-  </table>   
-</form>
 
-<form>
-		</tr>
-			 <input type="submit" value="CADASTRAR" >  
-		</tr>
-</form>
+<body onload="definirLayout()">
+
+	<form>
+		<table>
+			<tr>
+				<td>CPF:</td>
+				<td><input type="text" name="CPF" id="CPF" autofocus="autofocus" /></td>
+			</tr>
+			<tr>
+				<td>SENHA:</td>
+				<td><input type="text" name="SENHA" /></td>
+			</tr>
+
+			<tr>
+				<td>CONFIRMAR SENHA:</td>
+				<td><input type="text" name="CONFIRSENHA" /></td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<input type="submit" value="CADASTRAR">
+				</td>
+			</tr>
+		</table>
+	</form>
 
 
-<footer>
-		<h2>Powered by MacroHard<h2>   
-</footer>
 </body>
 
 </html>

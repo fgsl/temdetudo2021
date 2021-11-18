@@ -1,3 +1,38 @@
+function definirLayout()
+{
+    var body = document.getElementsByTagName('body')[0];
+    var header = document.createElement('header');
+    body.insertBefore(header, body.firstChild);
+    var h1 = document.createElement('h1');
+    header.appendChild(h1);
+    h1.setAttribute('id','n01');
+    h1.innerHTML = 'LOJAS TEM DE TUDO';
+
+    var footer = document.createElement('footer');
+    body.appendChild(footer);
+    var anchor = document.createElement('a');
+    footer.appendChild(anchor);
+    anchor.setAttribute('href','index.html');
+    anchor.innerHTML = 'Voltar às Lojas Temdetudo';
+}
+
+
+// Esta função não é realmente necessária, porque existe o atributo autofocus na tag input
+function focarCPF() {
+    inputCPF = document.getElementById("CPF");
+    inputCPF.focus();
+}
+
+function mudarRodape() {
+    var rodape = `
+<h1>MicroHard
+Sistemas
+Comerciais</h1>
+<a href="index.html">Voltar às Lojas Temdetudo</a>
+`;
+    document.getElementById('footer').innerHTML = rodape;
+}
+
 function carregarProdutos()
 {
     var tbody = document.getElementById("tabela_produtos_corpo");

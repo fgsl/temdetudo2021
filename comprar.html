@@ -1,40 +1,36 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-       <title>LOJAS TEM DE TUDO</title>
-	   <meta charset ="utf-8" />
-	   <link rel="stylesheet" type="text/css" href="temdetudo.css">
-	   <script type="text/javascript" src="script.js"></script>
+	<title>LOJAS TEM DE TUDO</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" type="text/css" href="temdetudo.css">
+	<script type="text/javascript" src="script.js"></script>
 </head>
 
-<body onLoad="carregarProdutos()">
-	<h1><a href="index.html">LOJAS TEM DE TUDO</a></h1> 
+<body onLoad="definirLayout()">
+	<table onload="carregarProdutos()">
+		<thead>
+			<tr>
+				<th>Código</th>
+				<th>Produto</th>
+				<th>Preço Unitário</th>
+				<th>Quantidade</th>
+				<th>Total</th>
+			</tr>
+		</thead>
+		<tbody id="tabela_produtos_corpo">
 
+		</tbody>
+		<tfooter>
+			<tr>
+				<td>Total</td>
+				<td id="total">0</td>
+			</tr>
+		</tfooter>
 
-	<table>
-    <thead>
-	<tr>
-		<th>Código</th>
-		<th>Produto</th>
-		<th>Preço Unitário</th>
-		<th>Quantidade</th>
-		<th>Total</th>
-	</tr>
-	</thead>
-	<tbody id="tabela_produtos_corpo">
- 
-	</tbody>
-	<tfooter>
-	<tr>
-		 <td>Total</td>
-		 <td id="total">0</td>
-	</tr>		
-	</tfooter>
-		
 	</table>
 
-<footer>
-		<h2>Powered by MacroHard<h2>   
-</footer>
 </body>
+
 </html>
