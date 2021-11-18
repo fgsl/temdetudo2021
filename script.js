@@ -1,3 +1,10 @@
+function configurarPaginaComprar()
+{
+    definirLayout()
+    carregarProdutos()
+}
+
+
 function definirLayout()
 {
     var body = document.getElementsByTagName('body')[0];
